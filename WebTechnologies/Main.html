@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="day-mode">
+<header class="bg-secondary p-3">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">SIA Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">Destinations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center mt-3">Travel with SIA travel!</h1>
+</header>
+<main class="container mt-5">
+    <button id="toggle-theme" class="btn btn-dark mb-4">Switch to Night Mode</button>
+    <section class="row mb-5">
+        <div class="col-lg-6 mb-4">
+            <h2>SIA travel - choose now, live today, travel always!</h2>
+        </div>
+        <div class="col-lg-6">
+            <h2>With us you can easily plan your vacation or business trip. We know and love our job!</h2>
+        </div>
+    </section>
+    <section class="row text-center">
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="lovepik-airplane-icon-png-image_401420921_wh1200.png" class="card-img-top" alt="Flights">
+                <div class="card-body">
+                    <h3 class="card-title">Cheap flights</h3>
+                    <p class="card-text">We will find the most profitable air travel options.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="6554183.png" class="card-img-top" alt="Tourism">
+                <div class="card-body">
+                    <h3 class="card-title">Tourism</h3>
+                    <p class="card-text">We can organize a trip to any country.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="4018194.png" class="card-img-top" alt="Options">
+                <div class="card-body">
+                    <h3 class="card-title">Additional options</h3>
+                    <p class="card-text">Visas, insurance, transfer, group rates..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5">
+        <h2 class="text-center">Explore Our Gallery</h2>
+        <div class="text-center my-4">
+            <img id="main-image" src="glav1920.jpg" alt="Main Display" class="img-fluid" style="max-width: 70%; border-radius: 8px;">
+        </div>
+        <div class="d-flex justify-content-center gap-3">
+            <img src="glav1920.jpg" class="thumbnail" data-fullsize="glav1920.jpg" alt="Thumbnail 1" style="width: 100px; cursor: pointer;">
+            <img src="losangeles-observatory-social.jpg.webp" class="thumbnail" data-fullsize="losangeles-observatory-social.jpg.webp" alt="Thumbnail 2" style="width: 100px; cursor: pointer;">
+            <img src="dubai-skyline-at-dusk-jpg_header-144981.jpeg" class="thumbnail" data-fullsize="dubai-skyline-at-dusk-jpg_header-144981.jpeg" alt="Thumbnail 3" style="width: 100px; cursor: pointer;">
+        </div>
+    </section>
+    <section class="container my-5">
+        <p id="more-text" style="display: none;">
+            We specialize in unique travel experiences, offering comprehensive packages for both leisure and business trips.
+            SIA Travel ensures your travels are memorable with services tailored to your needs.
+        </p>
+        <button id="read-more" class="btn btn-secondary">Read More</button>
+    </section>
+    <div id="login-form" class="popup-overlay d-none">
+        <div class="popup">
+            <h3>Login</h3>
+            <form id="auth-form" class="row g-3">
+                <div class="col-12">
+                    <label for="username" class="form-label">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button id="logout-button" class="btn btn-secondary d-none">Logout</button>
+    <h1 class="text-center my-5">Get Advice</h1>
+    <button id="open-popup" class="btn btn-info">Open Contact Form</button>
+    <div id="popup-form" class="d-none popup-overlay">
+        <div class="popup">
+            <h3>Contact Us</h3>
+            <button id="close-popup" class="btn-close">Close</button>
+            <form id="contact-form" class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number">
+                </div>
+                <div class="col-12">
+                    <label for="destination" class="form-label">Destination:</label>
+                    <select id="destination" name="destination" class="form-select">
+                        <option value="cappadocia">Cappadocia</option>
+                        <option value="los_angeles">Los Angeles</option>
+                        <option value="dubai">Dubai</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Your wishes:</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" placeholder="Enter your wishes"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="button" id="reset-form" class="btn btn-warning">Reset Form</button>
+                </div>
+                <div class="col-12">
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="bg-light text-center py-3">
+    <p>&copy; 2024 Sabina Armanovna</p>
+    <p id="date-time"></p>
+</footer>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

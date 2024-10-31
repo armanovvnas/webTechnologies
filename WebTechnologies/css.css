@@ -1,0 +1,72 @@
+body.day-mode {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+body.night-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+}
+.card {
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.accordion {
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.accordion:hover {
+    background-color: #495057;
+}
+.accordion.active {
+    background-color: #6c757d;
+}
+.panel {
+    padding: 0 18px;
+    background-color: #f1f1f1;
+    display: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.panel.show {
+    display: block;
+    padding: 15px 18px;
+}
+.panel img {
+    max-width: 65%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.panel img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+.thumbnail {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
