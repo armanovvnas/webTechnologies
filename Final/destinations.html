@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - SIA Travelling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <center>
+    <nav class="navbar">
+        <div class="menu-left">
+            <a href="Main.html">Main</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="profile.html">Profile</a>
+        </div>
+        <div class="menu-right">
+            <button>Log In</button>
+            <button>Log Out</button>
+            <button id="toggle-mode">Dark/Light Mode</button>
+        </div>
+    </nav>
+        </center>
+</header>
+<center>
+<!-- Motivational Section -->
+<section class="motivation">
+    <h1>"Travel far enough, you meet yourself."</h1>
+</section>
+<div>
+    <select id="category">
+        <option value="all">All</option>
+        <option value="luxury">Luxury</option>
+        <option value="culture">Culture</option>
+        <option value="adventure">Adventure</option>
+    </select>
+
+    <select id="price-range">
+        <option value="all">All</option>
+        <option value="below-1500">Below $1500</option>
+        <option value="above-1500">Above $1500</option>
+    </select>
+
+    <button id="apply-filter">Apply</button>
+</div>
+</center>
+<section class="destinations">
+    <h2>Discover Your Next Adventure</h2>
+    <div class="destination-grid" id="destination-grid">
+        <!-- Example of a Destination -->
+        <div class="destination" data-category="Luxury" data-price="1200">
+            <img src="Paris.jpeg" alt="Paris">
+            <h3>Paris, France</h3>
+            <p>Price: $1200</p>
+            <p>Category: Luxury</p>
+        </div>
+
+        <div class="destination" data-category="Culture" data-price="1500">
+            <img src="Tokyo.jpeg" alt="Tokyo">
+            <h3>Tokyo, Japan</h3>
+            <p>Price: $1500</p>
+            <p>Category: Culture</p>
+        </div>
+        <div class="destination" data-category="Adventure" data-price="1800">
+            <img src="Sydney.jpeg" alt="Sydney">
+            <h3>Sydney, Australia</h3>
+            <p>Price: $1800</p>
+            <p>Category: Adventure</p>
+        </div>
+        <div class="destination" data-category="Adventure" data-price="1700">
+            <img src="Istanbul.jpeg" alt="Istanbul">
+            <h3>Istanbul, Turkey</h3>
+            <p>Price: $1700</p>
+            <p>Category: Adventure</p>
+        </div>
+        <div class="destination" data-category="Adventure" data-price="2000">
+            <img src="Dubai.jpeg" alt="Dubai">
+            <h3>Dubai, UAE</h3>
+            <p>Price: $2000</p>
+            <p>Category: Adventure</p>
+        </div>
+        <div class="destination" data-category="Luxury" data-price="1700">
+            <img src="Maldiv.jpeg" alt="Maldiv">
+            <h3>Maldiv, Maldiv</h3>
+            <p>Price: $1700</p>
+            <p>Category: Luxury</p>
+        </div>
+        <div class="destination" data-category="Culture" data-price="1600">
+            <img src="Rome.jpeg" alt="Rome">
+            <h3>Rome, Italy</h3>
+            <p>Price: $1600</p>
+            <p>Category: Culture</p>
+        </div>
+        <div class="destination" data-category="Culture" data-price="1500">
+            <img src="Egypt.jpeg" alt="Egypt">
+            <h3>Egypt, Egypt</h3>
+            <p>Price: $1500</p>
+            <p>Category: Culture</p>
+        </div>
+        <div class="destination" data-category="Adventure" data-price="1100">
+            <img src="Almaty.jpeg" alt="Almaty">
+            <h3>Almaty, Kazakhstan</h3>
+            <p>Price: $1100</p>
+            <p>Category: Adventure</p>
+        </div>
+        <div class="destination" data-category="Luxury" data-price="1400">
+            <img src="Thailand.jpeg" alt="Thailand">
+            <h3>Thailand , Thailand</h3>
+            <p>Price: $1400</p>
+            <p>Category: Luxury</p>
+        </div>
+        <div class="destination" data-category="Culture" data-price="1700">
+            <img src="Tbilisi.jpeg" alt="Tbilisi">
+            <h3>Tbilisi, Georgia</h3>
+            <p>Price: $1700</p>
+            <p>Category: Culture</p>
+        </div>
+        <div class="destination" data-category="Adventure" data-price="1800">
+            <img src="LosAngeles.jpeg" alt="Los-Angeles">
+            <h3>Los-Angeles, USA</h3>
+            <p>Price: $1800</p>
+            <p>Category: Adventure</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 SIA Travelling. All rights reserved.</p>
+</footer>
+<!-- Modal for Country Info -->
+<div class="popup" id="country-info-popup">
+    <div class="popup-content">
+        <h2 id="country-name">Country Name</h2>
+        <p id="country-details">Country details will appear here...</p>
+        <button id="close-popup">Close</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

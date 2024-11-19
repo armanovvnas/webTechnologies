@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA Travelling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<center>
+<header>
+    <nav class="navbar">
+        <div class="menu-left">
+            <a href="Main.html">Main</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="profile.html">Profile</a>
+        </div>
+        <div class="menu-right">
+            <button>Log In</button>
+            <button style="display: none;">Log Out</button>
+            <button id="toggle-mode">Dark/Light Mode</button>
+        </div>
+    </nav>
+</header>
+<div class="popup" id="login-popup" style="display: none;">
+    <div class="popup-content">
+        <h2>Log In</h2>
+        <button id="close-login-popup">Close</button>
+        <form id="login-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<section class="hero">
+    <h1>Explore world with us</h1>
+    <img src="travel.jpeg" alt="Travel the world" class="hero-img">
+    <p class="motivation">"The world is a book, and those who do not travel read only one page. Start your adventure today!"</p>
+</section>
+<section class="about">
+    <h1>About SIA Travelling</h1>
+    <img src="Travel.jpg" alt="About Us" class="about-img">
+    <p>At SIA Travelling, we bring your travel dreams to life. With personalized travel plans, exclusive deals, and exceptional service, we ensure your journey is truly unforgettable. Our team is dedicated to making every trip seamless and stress-free.</p>
+    <h1>Our Advantages:</h1>
+    <ul>
+        <li>Affordable travel packages</li>
+        <li>24/7 customer support</li>
+        <li>Experienced travel consultants</li>
+        <li>Customized itineraries</li>
+        <li>Worldwide destinations</li>
+    </ul>
+</section>
+    <div id="weather-widget">
+        <h2>Weather Information</h2>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button id="get-weather-btn">Get Weather</button>
+        <div id="weather-info"></div>
+    </div>
+    </section>
+<section class="cta">
+    <h2>Ready to Explore?</h2>
+    <button onclick="window.location.href='destinations.html'" class="cta-btn">Discover Destinations</button>
+</section>
+    <!-- Кнопка для запроса консультации -->
+    <button id="consult-btn">Get Consultation</button>
+
+    <!-- Попап для консультации -->
+    <div id="consult-popup" style="display: none;">
+        <div class="popup-content">
+            <form id="consult-form">
+                <label for="consult-name">Name:</label>
+                <input type="text" id="consult-name" required>
+
+                <label for="consult-surname">Surname:</label>
+                <input type="text" id="consult-surname" required>
+
+                <label for="consult-phone">Phone:</label>
+                <input type="text" id="consult-phone" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <button id="close-consult-popup">Close</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+<footer>
+    <p>&copy; 2024 SIA Travelling. All rights reserved.</p>
+</footer>
+    </center>
+</body>
+</html>
